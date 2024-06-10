@@ -3,7 +3,6 @@
   --secondary: #cccccc;
   --accent: #005d9a;
   --highlight: #999999;
-  --alt-accent: #ffd700;
   margin: 0;
 }
 
@@ -97,7 +96,6 @@ h1 {
 .strength-bar {
   width: 0rem;
   height: 1rem;
-  background-color: var(--alt-accent);
   border-radius: 2rem;
 }
 

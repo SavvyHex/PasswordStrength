@@ -55,6 +55,16 @@ function get_strength_message(score) {
   }
 }
 
+function get_bar_colour(score) {
+  if (score < 3) {
+    return "#BB1E10";
+  } else if (score < 5) {
+    return "#EFB700";
+  } else {
+    return "#32A431";
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   document
     .querySelector(".submit-button")
@@ -65,6 +75,8 @@ document.addEventListener("DOMContentLoaded", function () {
       document
         .getElementById("bar")
         .setAttribute("style", `width : ${score * 20}%`);
+      document.getElementById("bar").style.backgroundColor =
+        get_bar_colour(score);
       document.querySelector(".strength-message").textContent =
         get_strength_message(score);
     });
