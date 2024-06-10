@@ -47,7 +47,7 @@ function get_strength_message(score) {
     case 2:
       return "Your password can be much stronger";
     case 3:
-      return "Consider diversifying your password with digits and special characters";
+      return "Consider adding digits and special characters";
     case 4:
       return "That's a decent password";
     case 5:
